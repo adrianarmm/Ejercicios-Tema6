@@ -15,3 +15,11 @@ public class EJ2 {
         fillListWithRandomIntegers(randomIntegersList2);
         System.out.println("List 2 (LinkedList): " + randomIntegersList2);
     }
+
+    private static void fillListWithRandomIntegers(List<Integer> list) {
+        Random random = new Random();
+        for (int i = 0; i < 100; i++) {
+            list.add(random.nextInt(1000));
+        }
+    }
+}
