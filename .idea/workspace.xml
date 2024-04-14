@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="6">
-      <change beforePath="$PROJECT_DIR$/src/main/java/EJ2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EJ2.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +29,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EJ1.executor": "Run",
+    "Application.EJ2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -58,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713095640334</updated>
-      <workItem from="1713095641532" duration="329000" />
+      <workItem from="1713095641532" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -108,7 +107,47 @@
       <option name="project" value="LOCAL" />
       <updated>1713095967428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7">
+      <option name="closed" value="true" />
+      <created>1713096013106</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096013106</updated>
+    </task>
+    <task id="LOCAL-00008" summary="8">
+      <option name="closed" value="true" />
+      <created>1713096024926</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096024926</updated>
+    </task>
+    <task id="LOCAL-00009" summary="9">
+      <option name="closed" value="true" />
+      <created>1713096037130</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096037130</updated>
+    </task>
+    <task id="LOCAL-00010" summary="10">
+      <option name="closed" value="true" />
+      <created>1713096237598</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096237598</updated>
+    </task>
+    <task id="LOCAL-00011" summary="11">
+      <option name="closed" value="true" />
+      <created>1713096284443</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096284443</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +160,11 @@
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="7" />
+    <MESSAGE value="8" />
+    <MESSAGE value="9" />
+    <MESSAGE value="10" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
 </project>
