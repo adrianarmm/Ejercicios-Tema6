@@ -17,10 +17,14 @@ public class EJ5 {
                 System.out.print("Introduce la posición: ");
                 int posicion = scanner.nextInt();
                 scanner.nextLine(); // Consumir el salto de línea pendiente
-                System.out.print("Introduce la cadena: ");
-                String cadena = scanner.nextLine();
-                lista.add(posicion, cadena);
-                System.out.println("Lista: " + lista);
+                if (posicion >= 0 && posicion <= lista.size()) { // Validación de la posición
+                    System.out.print("Introduce la cadena: ");
+                    String cadena = scanner.nextLine();
+                    lista.add(posicion, cadena);
+                    System.out.println("Lista: " + lista);
+                } else {
+                    System.out.println("La posición especificada no es válida.");
+                }
             } else if (opcion == 2) {
                 System.out.print("Introduce la posición de la cadena a eliminar: ");
                 int posicion = scanner.nextInt();
@@ -38,8 +42,8 @@ public class EJ5 {
                 System.out.println("Opción inválida.");
             }
         }
+        scanner.close();
     }
-
 }
 
 

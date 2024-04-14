@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="18 // Explicacion de que lista he ultilizado y porque.&#10;   // He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos al final de la lista.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EJ5.java" afterDir="false" />
+    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="21">
+      <change beforePath="$PROJECT_DIR$/src/main/java/EJ5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EJ5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
     "Application.EJ2.executor": "Run",
     "Application.EJ3.executor": "Run",
     "Application.EJ4.executor": "Run",
+    "Application.EJ5.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -61,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713095640334</updated>
-      <workItem from="1713095641532" duration="1084000" />
+      <workItem from="1713095641532" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -207,7 +208,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713096689439</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="19">
+      <option name="closed" value="true" />
+      <created>1713096877304</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096877304</updated>
+    </task>
+    <task id="LOCAL-00020" summary="20">
+      <option name="closed" value="true" />
+      <created>1713096896581</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096896581</updated>
+    </task>
+    <task id="LOCAL-00021" summary="21">
+      <option name="closed" value="true" />
+      <created>1713096931510</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713096931510</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +257,9 @@
     <MESSAGE value="16" />
     <MESSAGE value="17" />
     <MESSAGE value="18 // Explicacion de que lista he ultilizado y porque.&#10;   // He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos al final de la lista." />
-    <option name="LAST_COMMIT_MESSAGE" value="18 // Explicacion de que lista he ultilizado y porque.&#10;   // He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos al final de la lista." />
+    <MESSAGE value="19" />
+    <MESSAGE value="20" />
+    <MESSAGE value="21" />
+    <option name="LAST_COMMIT_MESSAGE" value="21" />
   </component>
 </project>
