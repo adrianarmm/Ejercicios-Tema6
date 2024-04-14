@@ -15,7 +15,7 @@ public class EJ3 {
         fillListWithRandomParejas(randomParejasList2);
         System.out.println("List 2 (LinkedList): " + randomParejasList2);
     }
-    private static void fillListWithRandomParejas(List<Pareja<Integer, Integer>> list) {
+    private static void fillListWithRandomParejas(List<EJ3<Integer, Integer>> list) {
         Random random = new Random();
         for (int i = 0; i < 100; i++) {
             list.add(new EJ3<>(random.nextInt(1000), random.nextInt(1000)));
