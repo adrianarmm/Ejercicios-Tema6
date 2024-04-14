@@ -11,3 +11,7 @@ public class EJ2 {
         fillListWithRandomIntegers(randomIntegersList1);
         System.out.println("List 1 (ArrayList): " + randomIntegersList1);
 
+        List<Integer> randomIntegersList2 = new LinkedList<>();
+        fillListWithRandomIntegers(randomIntegersList2);
+        System.out.println("List 2 (LinkedList): " + randomIntegersList2);
+    }
