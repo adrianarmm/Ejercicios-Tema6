@@ -32,6 +32,7 @@ public class EJ4 {
             }
         }
     }
-
+// Explicacion de que lista he ultilizado y porque.
+// He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos al final de la lista.
 }
 
