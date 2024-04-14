@@ -12,5 +12,39 @@ public class EJ5 {
             System.out.println("3. Salir");
             System.out.print("Elige una opción: ");
             int opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir el salto de línea pendiente
+            if (opcion == 1) {
+                System.out.print("Introduce la posición: ");
+                int posicion = scanner.nextInt();
+                scanner.nextLine(); // Consumir el salto de línea pendiente
+                System.out.print("Introduce la cadena: ");
+                String cadena = scanner.nextLine();
+                lista.add(posicion, cadena);
+                System.out.println("Lista: " + lista);
+            } else if (opcion == 2) {
+                System.out.print("Introduce la posición de la cadena a eliminar: ");
+                int posicion = scanner.nextInt();
+                scanner.nextLine(); // Consumir el salto de línea pendiente
+                if (posicion >= 0 && posicion < lista.size()) {
+                    String cadenaEliminada = lista.remove(posicion);
+                    System.out.println("Se ha eliminado la cadena: " + cadenaEliminada);
+                    System.out.println("Lista: " + lista);
+                } else {
+                    System.out.println("La posición especificada no es válida.");
+                }
+            } else if (opcion == 3) {
+                break;
+            } else {
+                System.out.println("Opción inválida.");
+            }
+        }
+    }
+
 }
+
+
+
+
+
+
 
