@@ -1,45 +1,40 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class EJ5 {
 
     public static void main(String[] args) {
-        ArrayList<String> lista = new ArrayList<>();
+        LinkedList<String> cadenaLista = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("1. Añadir cadena");
-            System.out.println("2. Eliminar cadena");
-            System.out.println("3. Salir");
-            System.out.print("Elige una opción: ");
-            int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea pendiente
-            if (opcion == 1) {
-                System.out.print("Introduce la posición: ");
-                int posicion = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea pendiente
-                if (posicion >= 0 && posicion <= lista.size()) { // Validación de la posición
-                    System.out.print("Introduce la cadena: ");
+        boolean seguir = true;
+        while (seguir) {
+            System.out.println("Introduce una opción (insertar, eliminar, mostrar, salir):");
+            String opcion = scanner.nextLine();
+            switch (opcion) {
+                case "insertar":
+                    System.out.print("Introduce la posición: ");
+                    int posicion = scanner.nextInt();
+                    scanner.nextLine(); // Consumir el salto de línea
+                    System.out.print("Introduce la cadena de caracteres: ");
                     String cadena = scanner.nextLine();
-                    lista.add(posicion, cadena);
-                    System.out.println("Lista: " + lista);
-                } else {
-                    System.out.println("La posición especificada no es válida.");
-                }
-            } else if (opcion == 2) {
-                System.out.print("Introduce la posición de la cadena a eliminar: ");
-                int posicion = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea pendiente
-                if (posicion >= 0 && posicion < lista.size()) {
-                    String cadenaEliminada = lista.remove(posicion);
-                    System.out.println("Se ha eliminado la cadena: " + cadenaEliminada);
-                    System.out.println("Lista: " + lista);
-                } else {
-                    System.out.println("La posición especificada no es válida.");
-                }
-            } else if (opcion == 3) {
-                break;
-            } else {
-                System.out.println("Opción inválida.");
+                    cadenaLista.add(posicion, cadena);
+                    break;
+                case "eliminar":
+                    System.out.print("Introduce la posición: ");
+                    int posicionEliminar = scanner.nextInt();
+                    cadenaLista.remove(posicionEliminar);
+                    break;
+                case "mostrar":
+                    System.out.println("Cadenas de caracteres en la lista:");
+                    for (int i = 0; i < cadenaLista.size(); i++) {
+                        System.out.printf("%d: %s%n", i, cadenaLista.get(i));
+                    }
+                    break;
+                case "salir":
+                    seguir = false;
+                    break;
+                default:
+                    System.out.println("Opción inválida.");
             }
         }
         scanner.close();
