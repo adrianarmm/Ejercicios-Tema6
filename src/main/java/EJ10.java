@@ -12,14 +12,17 @@ class Venta {
     LocalDate fecha;
 
     public Venta(String producto, String cliente, double precio, String fecha) {
+        // Ajustar el formato de fecha a "yy/MM/dd"
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy/MM/dd");
         this.producto = producto;
         this.cliente = cliente;
         this.precio = precio;
-        this.fecha = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        this.fecha = LocalDate.parse(fecha, formatter);
     }
 
     @Override
     public String toString() {
+        // Cambiar el formato de fecha al deseado para la impresión si necesario
         return "Venta{" +
                 "producto='" + producto + '\'' +
                 ", cliente='" + cliente + '\'' +
@@ -50,13 +53,13 @@ public class EJ10 {
                         String cliente = scanner.nextLine();
                         System.out.print("Introduce el precio: ");
                         double precio = Double.parseDouble(scanner.nextLine()); // Use nextLine and parseDouble
-                        System.out.print("Introduce la fecha (yy/dd/aaaa): ");
+                        System.out.print("Introduce la fecha (yy/MM/dd): ");
                         String fecha = scanner.nextLine();
                         ventas.add(new Venta(producto, cliente, precio, fecha));
                     } catch (NumberFormatException e) {
                         System.out.println("El precio introducido no es válido. Por favor, introduce un número.");
                     } catch (DateTimeParseException e) {
-                        System.out.println("La fecha introducida no es válida. Por favor, utiliza el formato (yy/dd/aaaa).");
+                        System.out.println("La fecha introducida no es válida. Por favor, utiliza el formato (yy/MM/dd).");
                     }
                     break;
                 case "listar":
