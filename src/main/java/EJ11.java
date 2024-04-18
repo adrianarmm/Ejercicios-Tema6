@@ -16,7 +16,7 @@ public class EJ11 {
         ArrayList<String> lines = new ArrayList<String>();
 
         try {
-            reader = new BufferedReader(new FileReader("input.txt"));
+            reader = new BufferedReader(new FileReader("/Users/adrianareyesmorera/Desktop/TARTAS-QUESO.txt"));
 
             String currentLine = reader.readLine();
 
