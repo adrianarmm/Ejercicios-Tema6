@@ -1,57 +1,32 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.List;
 
 public class EJ11 {
 
     public static void main(String[] args) {
-        BufferedReader reader = null;
-        BufferedWriter writer = null;
-
-        ArrayList<String> lines = new ArrayList<String>();
+        String inputFilePath = "/Users/adrianareyesmorera/Desktop/TARTAS-QUESO.txt";
+        String outputFilePath = "output.txt";
 
         try {
-            reader = new BufferedReader(new FileReader("/Users/adrianareyesmorera/Desktop/TARTAS-QUESO.txt"));
+            // Leer todas las líneas del archivo de entrada
+            List<String> lines = Files.readAllLines(Paths.get(inputFilePath));
 
-            String currentLine = reader.readLine();
+            // Ordenar las líneas
+            Collections.sort(lines);
 
-            while (currentLine != null) {
-                lines.add(currentLine);
-                currentLine = reader.readLine();
-            }
+            // Otra forma de hacer la ordenación es usar el método sort de List
+            // lines.sort(String::compareTo);
 
-            Collections.sort(lines, new Comparator<String>() {
-                @Override
-                public int compare(String s1, String s2) {
-                    return s1.compareTo(s2);
-                }
-            });
+            // Escribir las líneas ordenadas en el archivo de salida
+            Files.write(Paths.get(outputFilePath), lines);
 
-            writer = new BufferedWriter(new FileWriter("output.txt"));
-
-            for (String line : lines) {
-                writer.write(line);
-                writer.newLine();
-            }
+            System.out.println("Archivo ordenado y guardado exitosamente.");
         } catch (IOException e) {
+            System.err.println("Ocurrió un error al leer o escribir los archivos:");
             e.printStackTrace();
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-
-                if (writer != null) {
-                    writer.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
