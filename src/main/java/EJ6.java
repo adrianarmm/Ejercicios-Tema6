@@ -12,23 +12,21 @@ public class EJ6 {
             String opcion = scanner.nextLine();
             switch (opcion) {
                 case "insertar":
-                    String cadena = null;
-                    while (cadena == null || cadena.isEmpty()) {
-                        System.out.print("Introduce una cadena de caracteres: ");
-                        cadena = scanner.nextLine();
-                    }
-                    int posicion = 0;
-                    while (posicion >= cadenaLista.size()) {
-                        System.out.print("Introduce la posición para insertar (" + cadenaLista.size() + " posiciones disponibles): ");
-                        posicion = scanner.nextInt();
-                    }
-                    cadenaLista.add(posicion, cadena);
-                    for (int i = 0; i < cadenaLista.size() - 1; i++) {
-                        if (cadenaLista.get(i).compareToIgnoreCase(cadenaLista.get(i + 1)) > 0) {
-                            String temp = cadenaLista.get(i);
-                            cadenaLista.set(i, cadenaLista.get(i + 1));
-                            cadenaLista.set(i + 1, temp);
-                            i = -1; // Vuelve al inicio del bucle para reordenar
+                    if (cadenaLista.isEmpty()) {
+                        System.out.print("Introduce la cadena de caracteres: ");
+                        String cadena = scanner.nextLine();
+                        cadenaLista.add(cadena);
+                    } else {
+                        System.out.print("Introduce la posición (0 posiciones disponibles): ");
+                        int posicion = scanner.nextInt();
+                        scanner.nextLine(); // Consumir el salto de línea
+
+                        if (posicion >= 0 && posicion <= cadenaLista.size()) {
+                            System.out.print("Introduce la cadena de caracteres: ");
+                            String cadena = scanner.nextLine();
+                            cadenaLista.add(posicion, cadena);
+                        } else {
+                            System.out.println("La posición de inserción debe ser entre 0 y " + cadenaLista.size());
                         }
                     }
                     break;
