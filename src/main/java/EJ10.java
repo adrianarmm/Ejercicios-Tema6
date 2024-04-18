@@ -50,7 +50,7 @@ public class EJ10 {
                         String cliente = scanner.nextLine();
                         System.out.print("Introduce el precio: ");
                         double precio = Double.parseDouble(scanner.nextLine()); // Use nextLine and parseDouble
-                        System.out.print("Introduce la fecha (yyyy-MM-dd): ");
+                        System.out.print("Introduce la fecha (yy/dd/aaaa): ");
                         String fecha = scanner.nextLine();
                         ventas.add(new Venta(producto, cliente, precio, fecha));
                     } catch (NumberFormatException e) {
