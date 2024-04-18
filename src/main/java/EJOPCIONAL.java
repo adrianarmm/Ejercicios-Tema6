@@ -10,7 +10,7 @@ public class EJOPCIONAL {
     private static List<String> rutasDeArchivos = new ArrayList<>();
 
     public static void main(String[] args) {
-        indexarArchivos("/Users/adrianareyesmorera");
+        indexarArchivos("/Users/adrianareyesmorera/Desktop/");
 
         Scanner scanner = new Scanner(System.in);
 
