@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="30" />
+    <list default="true" id="7f609f10-19ad-41bb-b56c-d272e187c03d" name="Changes" comment="34">
+      <change beforePath="$PROJECT_DIR$/src/main/java/EJ10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EJ10.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EJ1.executor": "Run",
+    "Application.EJ10.executor": "Run",
     "Application.EJ2.executor": "Run",
     "Application.EJ3.executor": "Run",
     "Application.EJ4.executor": "Run",
@@ -40,6 +43,7 @@
     "Application.EJ6.executor": "Run",
     "Application.EJ7.executor": "Run",
     "Application.EJ8.executor": "Run",
+    "Application.EJ9.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -69,7 +73,7 @@
       <updated>1713095640334</updated>
       <workItem from="1713095641532" duration="4249000" />
       <workItem from="1713283552053" duration="46000" />
-      <workItem from="1713427722020" duration="639000" />
+      <workItem from="1713427722020" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -311,17 +315,45 @@
       <option name="project" value="LOCAL" />
       <updated>1713428309702</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="31">
+      <option name="closed" value="true" />
+      <created>1713428411043</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428411043</updated>
+    </task>
+    <task id="LOCAL-00032" summary="32">
+      <option name="closed" value="true" />
+      <created>1713428508780</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428508780</updated>
+    </task>
+    <task id="LOCAL-00033" summary="33">
+      <option name="closed" value="true" />
+      <created>1713428519698</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428519698</updated>
+    </task>
+    <task id="LOCAL-00034" summary="34">
+      <option name="closed" value="true" />
+      <created>1713428651170</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428651170</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6" />
-    <MESSAGE value="7" />
-    <MESSAGE value="8" />
-    <MESSAGE value="9" />
     <MESSAGE value="10" />
     <MESSAGE value="11" />
     <MESSAGE value="12" />
@@ -343,6 +375,10 @@
     <MESSAGE value="28" />
     <MESSAGE value="29" />
     <MESSAGE value="30" />
-    <option name="LAST_COMMIT_MESSAGE" value="30" />
+    <MESSAGE value="31" />
+    <MESSAGE value="32" />
+    <MESSAGE value="33" />
+    <MESSAGE value="34" />
+    <option name="LAST_COMMIT_MESSAGE" value="34" />
   </component>
 </project>
