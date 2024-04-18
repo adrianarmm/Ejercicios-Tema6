@@ -55,3 +55,6 @@ public class EJ6 {
         scanner.close();
     }
 }
+
+// tipo de estructura de datos utilizada y por qué
+// He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos en cualquier posición de la lista.
