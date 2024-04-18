@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Comparator;
 import java.util.Scanner;
 import java.util.TreeSet;
@@ -31,26 +32,32 @@ class Venta {
 public class EJ10 {
 
     public static void main(String[] args) {
-        TreeSet<Venta> ventas = new TreeSet<>(Comparator.comparing(venta -> venta.fecha)
+        TreeSet<Venta> ventas = new TreeSet<>(Comparator.comparing((Venta venta) -> venta.fecha)
                 .thenComparing(venta -> venta.cliente)
                 .thenComparing(venta -> venta.precio));
         Scanner scanner = new Scanner(System.in);
         boolean seguir = true;
+
         while (seguir) {
             System.out.println("Introduce una opción (insertar, listar, salir):");
             String opcion = scanner.nextLine();
             switch (opcion) {
                 case "insertar":
-                    System.out.print("Introduce el producto: ");
-                    String producto = scanner.nextLine();
-                    System.out.print("Introduce el cliente: ");
-                    String cliente = scanner.nextLine();
-                    System.out.print("Introduce el precio: ");
-                    double precio = scanner.nextDouble();
-                    scanner.nextLine(); // Consumir el salto de línea
-                    System.out.print("Introduce la fecha (yyyy-MM-dd): ");
-                    String fecha = scanner.nextLine();
-                    ventas.add(new Venta(producto, cliente, precio, fecha));
+                    try {
+                        System.out.print("Introduce el producto: ");
+                        String producto = scanner.nextLine();
+                        System.out.print("Introduce el cliente: ");
+                        String cliente = scanner.nextLine();
+                        System.out.print("Introduce el precio: ");
+                        double precio = Double.parseDouble(scanner.nextLine()); // Use nextLine and parseDouble
+                        System.out.print("Introduce la fecha (yyyy-MM-dd): ");
+                        String fecha = scanner.nextLine();
+                        ventas.add(new Venta(producto, cliente, precio, fecha));
+                    } catch (NumberFormatException e) {
+                        System.out.println("El precio introducido no es válido. Por favor, introduce un número.");
+                    } catch (DateTimeParseException e) {
+                        System.out.println("La fecha introducida no es válida. Por favor, utiliza el formato yyyy-MM-dd.");
+                    }
                     break;
                 case "listar":
                     System.out.println("Ventas:");
