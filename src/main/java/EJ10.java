@@ -56,7 +56,7 @@ public class EJ10 {
                     } catch (NumberFormatException e) {
                         System.out.println("El precio introducido no es válido. Por favor, introduce un número.");
                     } catch (DateTimeParseException e) {
-                        System.out.println("La fecha introducida no es válida. Por favor, utiliza el formato yyyy-MM-dd.");
+                        System.out.println("La fecha introducida no es válida. Por favor, utiliza el formato (yy/dd/aaaa).");
                     }
                     break;
                 case "listar":
