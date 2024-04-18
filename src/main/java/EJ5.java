@@ -15,14 +15,22 @@ public class EJ5 {
                     System.out.print("Introduce la posición: ");
                     int posicion = scanner.nextInt();
                     scanner.nextLine(); // Consumir el salto de línea
-                    System.out.print("Introduce la cadena de caracteres: ");
-                    String cadena = scanner.nextLine();
-                    cadenaLista.add(posicion, cadena);
+                    if (posicion >= 0 && posicion <= cadenaLista.size()) {
+                        System.out.print("Introduce la cadena de caracteres: ");
+                        String cadena = scanner.nextLine();
+                        cadenaLista.add(posicion, cadena);
+                    } else {
+                        System.out.println("La posición de inserción debe ser entre 0 y " + cadenaLista.size());
+                    }
                     break;
                 case "eliminar":
                     System.out.print("Introduce la posición: ");
                     int posicionEliminar = scanner.nextInt();
-                    cadenaLista.remove(posicionEliminar);
+                    if (posicionEliminar >= 0 && posicionEliminar < cadenaLista.size()) {
+                        cadenaLista.remove(posicionEliminar);
+                    } else {
+                        System.out.println("La posición de eliminación no es válida");
+                    }
                     break;
                 case "mostrar":
                     System.out.println("Cadenas de caracteres en la lista:");
@@ -40,7 +48,6 @@ public class EJ5 {
         scanner.close();
     }
 }
-
 
 
 
