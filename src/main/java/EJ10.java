@@ -28,7 +28,7 @@ class Venta {
     }
 }
 
-public class EJ10
+public class EJ10 {
 
     public static void main(String[] args) {
         TreeSet<Venta> ventas = new TreeSet<>(Comparator.comparing(venta -> venta.fecha)
