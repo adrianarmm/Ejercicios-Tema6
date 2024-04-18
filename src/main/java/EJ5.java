@@ -49,7 +49,8 @@ public class EJ5 {
     }
 }
 
-
+// Explicacion de que lista he ultilizado y porque.
+// He utilizado LinkedList porque es más eficiente que ArrayList para añadir y eliminar elementos en cualquier posición de la lista.
 
 
 
